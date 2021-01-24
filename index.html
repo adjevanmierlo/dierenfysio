@@ -2,92 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
                         Over mij
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Biografie</a>
-                        <a class="dropdown-item" href="#">Curriculum Vitae</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Biografie</a></li>
+                        <li><a class="dropdown-item" href="#">Curriculum Vitae</a></li>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Behandeling
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Algemeen</a>
-                        <a class="dropdown-item" href="#">Gezeldschapsdieren</a>
-                        <a class="dropdown-item" href="#">Paarden</a>
-                        <a class="dropdown-item" href="#">Ezels</a>
-                        <a class="dropdown-item" href="#">Behandelindicaties</a>
-                        <a class="dropdown-item" href="#">Samenwerking</a>
-                        <a class="dropdown-item" href="#">Geschiedenis</a>
-                        <a class="dropdown-item" href="#">Behandeltarieven</a>
-                        <a class="dropdown-item" href="#">Vergoedingen</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Therapievormen
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Fysiotherapie</a>
-                        <a class="dropdown-item" href="#">Chiropractie</a>
-                        <a class="dropdown-item" href="#">Osteopathie</a>
-                        <a class="dropdown-item" href="#">Sportkeuringen</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Ervaringen
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Honden</a>
-                        <a class="dropdown-item" href="#">Katten</a>
-                        <a class="dropdown-item" href="#">Paarden</a>
-                        <a class="dropdown-item" href="#">Ezels</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Links</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Contact
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Praktijk</a>
-                        <a class="dropdown-item" href="#">Informatie aanvraag</a>
-                        <a class="dropdown-item" href="#">Aanmeldingsformulier voor nieuwe cliёnt
-                        </a>
-                </li>
+            </ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Behandeling
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Algemeen</a></li>
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#">Gezeldschapsdieren</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Algemeen</a></li>
+                            <li><a class="dropdown-item" href="#">Honden</a></li>
+                            <li><a class="dropdown-item" href="#">Katten</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Paarden</a></li>
+                    <li><a class="dropdown-item" href="#">Ezels</a></li>
+                    <li><a class="dropdown-item" href="#">Behandelindicaties</a></li>
+                    <li><a class="dropdown-item" href="#">Samenwerking</a></li>
+                    <li><a class="dropdown-item" href="#">Geschiedenis</a></li>
+                    <li><a class="dropdown-item" href="#">Behandeltarieven</a></li>
+                    <li><a class="dropdown-item" href="#">Vergoedingen</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Therapievormen
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Fysiotherapie</a></li>
+                    <li><a class="dropdown-item" href="#">Chiropractie</a></li>
+                    <li><a class="dropdown-item" href="#">Osteopathie</a></li>
+                    <li><a class="dropdown-item" href="#">Sportkeuringen</a></li>
+            </li>
+            </ul>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Ervaringen
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Honden</a></li>
+                    <li><a class="dropdown-item" href="#">Katten</a></li>
+                    <li><a class="dropdown-item" href="#">Paarden</a></li>
+                    <li><a class="dropdown-item" href="#">Ezels</a></li>
+            </li>
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Links</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Contact
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Praktijk</a></li>
+                    <li><a class="dropdown-item" href="#">Informatie aanvraag</a></li>
+                    <li><a class="dropdown-item" href="#">Aanmeldingsformulier voor nieuwe cliёnt</a></li>
+            </li>
+            </ul>
+            </ul>
         </div>
-
-
     </nav>
-
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 
